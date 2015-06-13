@@ -32,9 +32,6 @@ public class Traccia {
 		return topTags;
 	}
 	
-	
-	
-	
 	public String toString(){
 		for(Track t : similar){
 			System.out.println(t.getName());

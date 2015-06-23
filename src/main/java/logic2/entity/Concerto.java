@@ -10,7 +10,7 @@ public class Concerto {
 	
 	private String apiKey="95f57bc8e14bd2eee7f1df8595291493";
 	
-	private String evenID;
+	private String eventID;
 	private String titoloConcerto;
 	private Date dataConcerto;
 	private String city;
@@ -19,7 +19,7 @@ public class Concerto {
 	private Collection<User> attendantConcerto;
 	
 	public Concerto(String eventID){
-		this.evenID = eventID;
+		this.eventID = eventID;
 		this.titoloConcerto = Event.getInfo(eventID, apiKey).getTitle();
 		this.dataConcerto = Event.getInfo(eventID, apiKey).getStartDate();
 		this.artistiConcerto = Event.getInfo(eventID, apiKey).getArtists();
@@ -30,11 +30,11 @@ public class Concerto {
 	}
 
 	public String getEvenID() {
-		return evenID;
+		return eventID;
 	}
 
 	public void setEvenID(String evenID) {
-		this.evenID = evenID;
+		this.eventID = evenID;
 	}
 
 	public String getTitoloConcerto() {
